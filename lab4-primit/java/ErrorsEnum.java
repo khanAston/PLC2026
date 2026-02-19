@@ -36,7 +36,7 @@ public class ErrorsEnum
     {
         Result result = null;
         
-        switch (e) {
+        switch (r) {
         case A_BIT_DIFFERENT:
             error = Error.FP_ROUNDING;
             break;
