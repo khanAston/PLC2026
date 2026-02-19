@@ -27,7 +27,7 @@ data Result = Zero | Infinity | ABitDifferent | VeryDifferent
               Bounded, -- default minBound and maxBound
               Enum) -- default sequencing (needed for .. ranges)
 
-allErrors :: [Error] -- ie it is a list of PL elements
+allErrors :: [Result] -- ie it is a list of PL elements
 allErrors = [minBound .. maxBound]
 
 result2Error ABitDifferent = FP_Rounding
